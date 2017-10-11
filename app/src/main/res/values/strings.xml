@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DecisionMaker</string>
+    <string name="YNbutton_send">Yes/No</string>
+    <string name="Localbutton_send">Local</string>
+    <string name="zipcode_enter">Zipcode</string>
+    <string name="food_box">Food</string>
+    <string name="entertainment_box">Entertainment</string>
+    <string name="shopping_box">Shopping</string>
+    <string name="recreation_box">Recreation</string>
+    <string name="submit_button">Submit</string>
+    <string name="idk_button">I don\'t know</string>
+    <string name="dollar_box">$</string>
+    <string name="twodollar_box">$$</string>
+    <string name="threedollar_box">$$$</string>
+</resources>
