@@ -57,23 +57,25 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:onClick="sendZip"
         android:text="@string/submit_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:text="@string/submit_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="152dp" />
+        tools:text="@string/submit_button" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="82dp"
+        android:onClick="sendZip"
         android:text="@string/idk_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:text="@string/idk_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="82dp" />
+        tools:text="@string/idk_button" />
 
     <CheckBox
         android:id="@+id/checkBox6"
