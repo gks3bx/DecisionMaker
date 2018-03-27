@@ -7,6 +7,7 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -42,6 +43,25 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".binaryChoice" />
         </activity>
+        <activity
+            android:name=".ChoiceActivity"
+            android:parentActivityName=".Local">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Local" />
+        </activity>
+        <activity
+            android:name=".ChoiceList"
+            android:parentActivityName=".ChoiceActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChoiceActivity" />
+        </activity>
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -58,24 +78,6 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"
             android:parentActivityName=".ChoiceActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MapsActivity" />
-        </activity>
-        <activity
-            android:name=".ChoiceActivity"
-            android:parentActivityName=".Local">
-
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Local" />
-        </activity>
-        <activity
-            android:name=".ChoiceList"
-            android:parentActivityName=".ChoiceActivity">
-
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ChoiceActivity" />
